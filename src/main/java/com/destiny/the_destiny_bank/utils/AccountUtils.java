@@ -6,9 +6,23 @@ import java.time.Year;
 public class AccountUtils {
 
     public static final String  ACCOUNT_EXISTS_CODE = "001";
-    public static final String  ACCOUNT_EXISTS_MESSAGE = "User Already has an account";
+
+    public static final String  NO_ACCOUNT_EXISTS_CODE = "003";
+    public static final String  ACCOUNT_FOUND_CODE = "004";
+    public static final String  ACCOUNT_CREDITED_CODE = "005";
+    public static final String  INSUFFICIENT_BALANCE_CODE = "006";
+    public static final String  ACCOUNT_DEBITED_CODE = "007";
 
     public static final String  ACCOUNT_CREATED_CODE = "002";
+    public static final String  ACCOUNT_EXISTS_MESSAGE = "User Already has an account";
+    public static final String  NO_ACCOUNT_EXISTS_MESSAGE = "Account Does Not Exists";
+
+    public static final String  ACCOUNT_FOUND_MESSAGE = "Account Found";
+    public static final String  ACCOUNT_INSUFFICIENT_MESSAGE = "INSUFFICIENT BALANCE";
+    public static final String  ACCOUNT_DEBITED_MESSAGE = "Account Debited Successfully";
+
+    public static final String  ACCOUNT_CREDITED_MESSAGE = "Account Credited Successfully";
+
     public static final String  ACCOUNT_CREATED_MESSAGE = "Account created successfully";
 
     public static String generateAccountNumber() {
